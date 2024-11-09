@@ -1,0 +1,5 @@
+from models.common import attempt_load
+
+# Load the model
+model = attempt_load('yolov5s.pt', map_location='cpu')
+print(model)
